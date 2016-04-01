@@ -1,0 +1,27 @@
+{
+	"name": "maiconpinto/cakephp-shopping-cart",
+	"description": "CakePHP - Shopping Cart",
+	"homepage": "http://github.com/maiconpinto/cakephp-shopping-cart",
+	"authors": [
+		{
+			"name": "Andras Kende",
+			"email": "andras@kende.com",
+			"homepage": "http://kende.com"
+		},
+		{
+			"name": "Maicon Pinto",
+			"email": "maiconsilva.pinto@gmail.com",
+			"homepage": "http://maiconpinto.com.br"
+		}
+	],
+	"config": {
+		"vendor-dir": "Vendor"
+	},
+	"require": {
+		"php": ">=5.3.10",
+        "cakephp/cakephp": "2.7.*",
+        "cakephp/debug_kit": "2.2.*",
+		"cakedc/migrations": "2.4.*",
+        "jrbasso/cake_ptbr": "2.*"
+	}
+}

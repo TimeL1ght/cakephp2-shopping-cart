@@ -1,0 +1,146 @@
+2016-04-01 16:24:25 Error: [ConfigureException] Could not load configuration file: /home/maiconpinto/public_html/cakephp-shopping-cart/app/Config/settings.php
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Core/Configure.php(329): PhpReader->read('settings')
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/app/Config/bootstrap.php(185): Configure::load('settings')
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Core/Configure.php(98): include('/home/maiconpin...')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(92): include('/home/maiconpin...')
+#5 {main}
+2016-04-01 16:24:25 Error: [ConfigureException] Could not load configuration file: /home/maiconpinto/public_html/cakephp-shopping-cart/app/Config/settings.php
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Core/Configure.php(329): PhpReader->read('settings')
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/app/Config/bootstrap.php(185): Configure::load('settings')
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Core/Configure.php(98): include('/home/maiconpin...')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(92): include('/home/maiconpin...')
+#5 {main}
+2016-04-01 16:25:56 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'maiconpi_lhw001\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp-shopping-cart/
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3653): Model->setSource('products')
+#5 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#6 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#7 /home/maiconpinto/public_html/cakephp-shopping-cart/app/Controller/ProductsController.php(33): Model->find('all', Array)
+#8 [internal function]: ProductsController->index()
+#9 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-04-01 16:25:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-shopping-cart/css/cake.generic.css
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-01 16:26:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'maiconpi_lhw001\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp-shopping-cart/users/login
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3653): Model->setSource('users')
+#5 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/Helper/FormHelper.php(479): FormHelper->_introspectModel('User', 'fields')
+#8 /home/maiconpinto/public_html/cakephp-shopping-cart/app/View/Users/login.ctp(8): FormHelper->create('User', Array)
+#9 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(971): include('/home/maiconpin...')
+#10 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(933): View->_evaluate('/home/maiconpin...', Array)
+#11 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(473): View->_render('/home/maiconpin...')
+#12 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-04-01 16:26:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-shopping-cart/css/cake.generic.css
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-01 16:27:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'maiconpi_lhw001\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp-shopping-cart/products/view
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3653): Model->setSource('products')
+#5 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#6 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#7 /home/maiconpinto/public_html/cakephp-shopping-cart/app/Controller/ProductsController.php(86): Model->find('first', Array)
+#8 [internal function]: ProductsController->view()
+#9 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-04-01 16:27:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-shopping-cart/css/cake.generic.css
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-04-01 16:27:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'maiconpi_lhw001\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp-shopping-cart/users/login
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(3653): Model->setSource('users')
+#5 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/Helper/FormHelper.php(479): FormHelper->_introspectModel('User', 'fields')
+#8 /home/maiconpinto/public_html/cakephp-shopping-cart/app/View/Users/login.ctp(8): FormHelper->create('User', Array)
+#9 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(971): include('/home/maiconpin...')
+#10 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(933): View->_evaluate('/home/maiconpin...', Array)
+#11 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/View/View.php(473): View->_render('/home/maiconpin...')
+#12 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/maiconpinto/public_html/cakephp-shopping-cart/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2016-04-01 16:27:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-shopping-cart/css/cake.generic.css
+Stack Trace:
+#0 /home/maiconpinto/public_html/cakephp-shopping-cart/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
