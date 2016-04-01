@@ -40,7 +40,7 @@ http://www.maiconpinto.com.br/cakephp-shopping-cart
 ////////////////////////////////////////////////////////////////////
 
 http://andraskende.github.com/cakephp-shopping-cart
--
--http://www.shoppingcartcore.com
--
--Andras Kende http://www.kende.com
+
+http://www.shoppingcartcore.com
+
+Andras Kende http://www.kende.com
