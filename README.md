@@ -12,35 +12,22 @@
 - Product Tags
 - Product Options
 
-## INCOMPLETE !
-
-////////////////////////////////////////////////////////////////////
-
 ## CakePHP Shopping Cart Demo:
 
 http://www.maiconpinto.com.br/cakephp-shopping-cart
 
-//////////////////////////////////////////////////////////////////////////
-
 ## CakePHP Shopping Cart Installation:
 
-- git clone https://github.com/andraskende/cakephp-shopping-cart.git cakephp-shopping-cart
+- git clone https://github.com/maiconpinto/cakephp-shopping-cart.git cakephp-shopping-cart
 - cd cakephp-shopping-cart
 - chmod -R 777 app/tmp/
-- mysql -u db_username -p db_password db_name < app/Config/Schema/shop.sql
 - cp app/Config/settings-default.php app/Config/settings.php
 - cp app/Config/database.php.default app/Config/database.php
+
+> Configure your `settings.php` and `database.php`
 
 - /admin
 - username: admin
 - password: admin
 
 - Dont forget to change passwords, salt in core.php, etc...
-
-////////////////////////////////////////////////////////////////////
-
-http://andraskende.github.com/cakephp-shopping-cart
-
-http://www.shoppingcartcore.com
-
-Andras Kende http://www.kende.com
