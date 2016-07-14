@@ -14,6 +14,7 @@ $config = array(
         'AUTHORIZENET_API_URL' => 'https://test.authorize.net/gateway/transact.dll',
         'AUTHORIZENET_API_LOGIN' => '',
         'AUTHORIZENET_API_TRANSACTION_KEY' => '',
+        'LOCALE' => ''
     )
 );
 
