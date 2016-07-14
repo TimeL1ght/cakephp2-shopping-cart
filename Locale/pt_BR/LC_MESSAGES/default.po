@@ -1,0 +1,20 @@
+msgid "Home"
+msgstr "Início"
+
+msgid "Products"
+msgstr "Produtos"
+
+msgid "Brands"
+msgstr "Marcas"
+
+msgid "Categories"
+msgstr "Categorias"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid "Shopping Cart"
+msgstr "Carrinho de compra"
+
+msgid "THIS IS A DEMO CAKEPHP SHOPPING CART !"
+msgstr "ESTA É UMA LOJA DE DEMONSTRAÇÃO!"

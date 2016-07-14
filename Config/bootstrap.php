@@ -184,3 +184,8 @@ CakeLog::config('error', array(
 ));
 
 Configure::load('settings');
+
+/**
+ * Locale
+ */
+Configure::write('Config.language', Configure::read('Settings.LOCALE'));
