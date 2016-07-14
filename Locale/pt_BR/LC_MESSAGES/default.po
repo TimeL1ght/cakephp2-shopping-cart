@@ -18,3 +18,6 @@ msgstr "Carrinho de compra"
 
 msgid "THIS IS A DEMO CAKEPHP SHOPPING CART !"
 msgstr "ESTA É UMA LOJA DE DEMONSTRAÇÃO!"
+
+msgid "No Results"
+msgstr "Nenhum Resultado"

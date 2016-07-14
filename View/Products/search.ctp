@@ -2,7 +2,7 @@
 
 <?php $this->Html->addCrumb('Search'); ?>
 
-<h1>Search</h1>
+<h1><?php echo __('Search'); ?></h1>
 
 <br />
 
@@ -43,7 +43,7 @@
 
 <?php else: ?>
 
-<h3>No Results</h3>
+<h3><?php echo __('No Results'); ?></h3>
 
 <?php endif; ?>
 <?php endif; ?>
