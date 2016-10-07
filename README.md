@@ -20,14 +20,14 @@ http://www.maiconpinto.com.br/cakephp-shopping-cart
 
 - git clone https://github.com/maiconpinto/cakephp-shopping-cart.git cakephp-shopping-cart
 - cd cakephp-shopping-cart
-- chmod -R 777 app/tmp/
-- cp app/Config/settings-default.php app/Config/settings.php
-- cp app/Config/database.php.default app/Config/database.php
+- chmod -R 777 tmp
+- cp Config/settings-default.php Config/settings.php
+- cp Config/database.php.default Config/database.php
 
 > Configure your `settings.php` and `database.php`
 
-- /admin
-- username: admin
-- password: admin
+Execute Migrations `Console/cake Migrations.migration run all`
 
-- Dont forget to change passwords, salt in core.php, etc...
+You need to register the first user. 
+
+After you go to `/admin`. 
