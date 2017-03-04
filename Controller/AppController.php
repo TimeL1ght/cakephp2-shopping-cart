@@ -43,6 +43,10 @@ class AppController extends Controller {
         //'Security',
     );
 
+    public $helpers = array(
+        'Form' => array('className' => 'ShoppingCartForm')
+    );
+
 ////////////////////////////////////////////////////////////
 
     public function beforeFilter() {
