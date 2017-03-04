@@ -1,49 +1,54 @@
-<h2>User</h2>
-
-<table class="table-striped table-bordered table-condensed table-hover">
-    <tr>
-        <td>Id</td>
-        <td><?php echo h($user['User']['id']); ?></td>
-    </tr>
-    <tr>
-        <td>Role</td>
-        <td><?php echo h($user['User']['role']); ?></td>
-    </tr>
-    <tr>
-        <td>Username</td>
-        <td><?php echo h($user['User']['username']); ?></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><?php echo h($user['User']['password']); ?></td>
-    </tr>
-    <tr>
-        <td>Active</td>
-        <td><?php echo h($user['User']['active']); ?></td>
-    </tr>
-    <tr>
-        <td>Created</td>
-        <td><?php echo h($user['User']['created']); ?></td>
-    </tr>
-    <tr>
-        <td>Modified</td>
-        <td><?php echo h($user['User']['modified']); ?></td>
-    </tr>
-</table>
-
-<br />
-<br />
-
-<h3>Actions</h3>
-
-<br />
-
-<?php echo $this->Html->link('Edit User', array('action' => 'edit', $user['User']['id']), array('class' => 'btn btn-default')); ?> </li>
-
-<br />
-<br />
-
-<?php echo $this->Form->postLink('Delete User', array('action' => 'delete', $user['User']['id']), array('class' => 'btn btn-danger'), __('Are you sure you want to delete # %s?', $user['User']['id'])); ?>
-
-<br />
-<br />
+<div class="users view">
+<h2><?php echo __('User'); ?></h2>
+	<dl>
+		<dt><?php echo __('Id'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['id']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Role'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['role']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['name']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Username'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['username']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Password'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['password']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Active'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['active']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Created'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['created']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Modified'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['modified']); ?>
+			&nbsp;
+		</dd>
+	</dl>
+</div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit User'), array('action' => 'edit', $user['User']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete User'), array('action' => 'delete', $user['User']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $user['User']['id']))); ?> </li>
+		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
+	</ul>
+</div>

@@ -1,20 +1,21 @@
-<h2>Admin Edit Brand</h2>
-
-<div class="row">
-
-    <div class="col col-lg-3">
-
-        <?php echo $this->Form->create('Brand'); ?>
-        <?php echo $this->Form->input('id'); ?>
-        <?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
-        <br />
-        <?php echo $this->Form->input('slug', array('class' => 'form-control')); ?>
-        <br />
-        <?php echo $this->Form->input('active', array('type' => 'checkbox')); ?>
-        <br />
-        <?php echo $this->Form->button('Submit', array('class' => 'btn btn-primary')); ?>
-        <?php echo $this->Form->end(); ?>
-
-    </div>
-
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+                <li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Brand.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Brand.id')))); ?></li>
+        <li><?php echo $this->Html->link(__('List Brands'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Products'), array('controller' => 'products', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Product'), array('controller' => 'products', 'action' => 'add')); ?> </li>
+    </ul>
+</div>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1><?php echo __('Brand') ?>        <small>
+                    <?php echo __('Edit'); ?>                </small>
+    </h1>
+    <?php echo $this->Form->create('Brand'); ?>
+    	<?php
+		echo $this->Form->input('id');
+		echo $this->Form->input('name');
+		echo $this->Form->input('slug');
+		echo $this->Form->input('active');
+	?>
+    <?php echo $this->Form->end(array('label' => __('Submit'), 'class' => 'btn btn-success')); ?>
 </div>

@@ -1,32 +1,17 @@
-<h2>Admin Edit Tag</h2>
-
-
-
-<div class="row">
-    <div class="col-sm-4">
-
-        <?php echo $this->Form->create('Tag'); ?>
-        <?php echo $this->Form->input('id'); ?>
-
-        <?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
-
-        <br />
-
-        <?php echo $this->Form->button('Submit', array('class' => 'btn btn-primary')); ?>
-        <?php echo $this->Form->end(); ?>
-
-    </div>
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+                <li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Tag.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Tag.id')))); ?></li>
+        <li><?php echo $this->Html->link(__('List Tags'), array('action' => 'index')); ?></li>
+    </ul>
 </div>
-
-<br />
-<br />
-
-
-<h3>Actions</h3>
-
-<br />
-
-<?php echo $this->Form->postLink('Delete', array('action' => 'delete', $this->Form->value('Tag.id')), array('class' => 'btn btn-danger'), __('Are you sure you want to delete # %s?', $this->Form->value('Tag.id'))); ?>
-
-<br />
-<br />
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1><?php echo __('Tag') ?>        <small>
+                    <?php echo __('Edit'); ?>                </small>
+    </h1>
+    <?php echo $this->Form->create('Tag'); ?>
+    	<?php
+		echo $this->Form->input('id');
+		echo $this->Form->input('name');
+	?>
+    <?php echo $this->Form->end(array('label' => __('Submit'), 'class' => 'btn btn-success')); ?>
+</div>
